@@ -1,0 +1,133 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: "Poppins", sans-serif;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        perspective: 1000px;
+    }
+    
+    .container {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .card {
+        transform-style: preserve-3d;
+        min-height: 80vh;
+        width: 24rem;
+        border-radius: 30px;
+        padding: 0rem 4rem;
+        box-shadow: 0 20px 20px rgba(1, 0, 1, 0.4), 0px 0px 30px rgba(1, 0, 1, 0.4);
+        transition: 0.6s ease-in-out;
+    }
+    
+    .container:hover .card {
+        transition: 0.6s ease-in-out;
+        background-color: rgba(240, 184, 110, 0.281);
+    }
+    
+    .sneaker {
+        min-height: 30vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .sneaker img {
+        width: 12rem;
+        z-index: 2;
+        transition: all 0.4s ease;
+    }
+    
+    .circle {
+        width: 10rem;
+        height: 10rem;
+        background: linear-gradient( to right, rgba(46, 93, 187, 0.95), rgba(212, 70, 3, 0.85));
+        position: absolute;
+        border-radius: 50%;
+        z-index: 1;
+    }
+    
+    .info h1 {
+        font-size: 2rem;
+        color: mediumvioletred;
+        text-shadow: 0 3px 3px rgba(1, 0, 0, 0.7), 0px 0px 30px rgba(1, 0, 0, 0.4);
+        padding: 0;
+        transition: all 0.7s ease;
+    }
+    
+    .info h3 {
+        font-size: 1rem;
+        padding: 1rem 0rem;
+        padding-bottom: 2rem;
+        color: #585858;
+        transition: all 0.9s ease;
+    }
+    
+    .sizes {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 2rem;
+        transition: all 1.2s ease;
+    }
+    
+    .sizes button {
+        padding: .6rem .6rem;
+        background: rgba(204, 115, 74, 0.692);
+        border-top: 5px solid rgba(64, 108, 196, 0.692);
+        border-left: 5px solid rgba(204, 115, 74, 0.692);
+        border-right: 5px solid rgba(204, 115, 74, 0.692);
+        border-bottom: 5px solid rgba(64, 108, 196, 0.692);
+        border-top-left-radius: 60px;
+        border-top-right-radius: 60px;
+        border-bottom-left-radius: 60px;
+        border-bottom-right-radius: 60px;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 15px;
+    }
+    
+    .sizes button:hover {
+        background: rgb(76, 106, 165);
+        border-top: 5px solid rgb(204, 115, 74);
+        border-left: 5px solid rgb(76, 106, 165);
+        border-right: 5px solid rgb(76, 106, 165);
+        border-bottom: 5px solid rgb(204, 115, 74);
+    }
+    
+    button.active {
+        background: linear-gradient( to right, rgba(46, 93, 187, 0.95), rgba(212, 70, 3, 0.85));
+        color: white;
+        border-top: none;
+        border-bottom: none;
+        border-left-color: rgb(64, 108, 196);
+        border-right-color: rgb(204, 115, 74);
+    }
+    
+    .purchase {
+        margin-top: 4rem;
+    }
+    
+    .purchase button {
+        width: 60%;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        padding: .7rem 1rem;
+        background: #fc5d5a;
+        border: none;
+        color: white;
+        cursor: pointer;
+        border-radius: 30px;
+        transition: all 1.4s ease;
+    }
